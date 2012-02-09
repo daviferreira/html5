@@ -45,9 +45,36 @@ h1 a:hover, h2 a:hover {
     background-color: #fff;
 }
 
-#header {
+#masthead {
     padding: 24px 0;
     border-top: 6px solid #4ca5fe;
+}
+
+#masthead h1, #masthead h2 {
+    margin: 0 0 0 24px;
+}
+
+#search {
+    margin: 24px 0 0;
+}
+
+#fld-search {
+    color: #4ca5fe;
+    font-weight: 900;
+    border: 1px solid #4ca5fe;
+    padding: 6px;
+}
+
+#fld-search.inactive {
+    color: #ccc;
+}
+
+#btn-search {
+    background-color: #4ca5fe;
+    color: #fff;
+    padding: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
 
 #menu {
@@ -80,6 +107,29 @@ h1 a:hover, h2 a:hover {
     text-align: left;
     width: 60px;
     background-color: #fcfcfc;
+}
+
+#post h2, #post h3, #post p {
+    padding: 24px;
+}
+
+#post h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    line-height: 46px;
+    border-bottom: 1px dotted #4ca5fe;
+}
+
+#post h3 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.box {
+    margin: 24px 0;
+    background-color: #ccc;
+    padding: 24px;
+    border: 1px solid #666;
 }
 
 #footer {
