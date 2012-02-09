@@ -10,78 +10,83 @@
     <link type="text/css" href="stylesheets/acme.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="header" class="row">
-        <div id="logo" class="column grid_8">
-            <h1><a href="/">ACME inc.</a></h1>
-            <h2><a href="/">Blog oficial</a></h2>
-        </div>
-        <div id="search" class="column grid_4">
-            <form action="/" method="GET">
-                <input type="text" id="fld-search" /> <input type="submit" />
-            </form>
-        </div> 
-    </div>
-    <div id="menu" class="row">
-        <div class="column grid_12">
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">Sobre</a>
-                </li>
-                <li>
-                    <a href="/">Arquivo</a>
-                    <ul>
-                        <li>
-                            <a href="/">2011</a>
-                            <a href="/">2012</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="twitter">
-                    <a href="/">Twitter</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="content" class="row">
-        <div id="post" class="column grid_8">
-            <h3>Hello, world!</h3>
-        </div>
-        <div id="sidebar" class="column grid_4">
-            <div class="box">
-                <h4>+ hello world</h4>
+    <div id="container">
+        <div id="header" class="row">
+            <div id="logo" class="column grid_8">
+                <h1><a href="/">ACME inc.</a></h1>
+                <h2><a href="/">Blog oficial</a></h2>
             </div>
-            <div class="box">
-                <h4>Arquivo</h4>
+            <div id="search" class="column grid_4">
+                <form action="/" method="GET">
+                    <input type="text" id="fld-search" /> <input type="submit" value="OK" />
+                </form>
+            </div> 
+        </div>
+        <div id="menu" class="row">
+            <div class="column grid_12">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/">Sobre</a>
+                    </li>
+                    <li class="parent-menu">
+                        <a href="/">Arquivo</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="/">2011</a>
+                            </li>
+                            <li>
+                                <a href="/">2012</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="twitter">
+                        <a href="/">Twitter</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div id="footer" class="row">
-        <div class="column grid_2">
-            <h4><a href="#">ACME inc.</a></h4>
+        <div id="content" class="row">
+            <div id="post" class="column grid_8">
+                <h3>Hello, world!</h3>
+            </div>
+            <div id="sidebar" class="column grid_4">
+                <div class="box">
+                    <h4>+ hello world</h4>
+                </div>
+                <div class="box">
+                    <h4>Arquivo</h4>
+                </div>
+            </div>
         </div>
-        <div class="column grid_6">
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">Sobre</a>
-                </li>
-                <li>
-                    <a href="/">Arquivo</a>
-                </li>
-                <li class="twitter">
-                    <a href="/">Twitter</a>
-                </li>
-            </ul>
-        </div>
-        <div id="copyright" class="column grid_4">
-            <p>&copy; Copyright 2012 ACME inc.</p>
+        <div id="footer" class="row">
+            <div class="column grid_2">
+                <h4><a href="#">ACME inc.</a></h4>
+            </div>
+            <div class="column grid_6">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="/">Arquivo</a>
+                    </li>
+                    <li class="twitter">
+                        <a href="/">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="copyright" class="column grid_4">
+                <p>&copy; Copyright 2012 ACME inc.</p>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/acme.js"></script>
 </body>
 </html>
