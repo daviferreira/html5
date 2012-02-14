@@ -1,0 +1,180 @@
+$cor_link: rgba(#4ca5fe, 1);
+$secao: blog;
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+    font-size: 14px;
+    @if $secao == blog {
+      background-color: #fff;
+    } @else {
+      background-color: #000;
+    }
+}
+
+$i: 1;
+@while $i <= 3 {
+  .sidebar-#{$i} { font-size: 0.5px * $i; }
+  $i: $i + 1;
+}
+
+p {
+    line-height: 22px;
+}
+
+a {
+    color: $cor_link;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: $cor_link / 2;
+    }
+}
+
+h1 {
+    font-size: 46px;
+    line-height: 52px;
+}
+
+h1 a {
+    color: #333;
+}
+
+h2 {
+    line-height: 16px;
+}
+
+h2 a {
+    color: #666;
+}
+
+h1 a:hover, h2 a:hover {
+    color: $cor_link;
+    text-decoration: none;
+}
+
+#container {
+    margin: 0 auto;
+    width: 960px;
+    background-color: #fff;
+}
+
+#masthead {
+    padding: 24px 0;
+    border-top: 6px solid $cor_link;
+}
+
+#masthead h1, #masthead h2 {
+    margin: 0 0 0 24px;
+}
+
+#search form {
+    margin: 24px 0 0;
+}
+
+#fld-search {
+    color: $cor_link;
+    font-weight: 900;
+    border: 1px solid $cor_link;
+    padding: 6px;
+    width: 230px;
+}
+
+#fld-search.inactive {
+    color: #ccc;
+}
+
+#btn-search {
+    background-color: $cor_link;
+    color: #fff;
+    padding: 6px;
+    border: 1px solid $cor_link;
+    cursor: pointer;
+}
+
+#menu {
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    li {
+        float: left;
+        width: 80px;
+        border-right: 1px dotted #ccc;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+#post h2, #post h3, #post p {
+    padding: 24px;
+}
+
+#post h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    line-height: 46px;
+    border-bottom: 1px dotted $cor_link;
+}
+
+#post h3 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+#post .photo {
+    background-color: #ccc;
+    width: 513px;
+    color: #333;
+    font-style: oblique;
+}
+
+#sidebar .box {
+    margin: 24px 0;
+    background-color: #f7f7f7;
+    padding: 24px;
+    border: 1px solid #666;
+}
+
+#sidebar .box h4 {
+    color: #666;
+    border-bottom: 1px dotted #666;
+    font-size: 20px;
+}
+
+#sidebar .box ul {
+    margin: 12px 0 0;
+}
+
+#sidebar .box li {
+    padding: 12px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+#sidebar .box a {
+    color: #666;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    border-bottom: 6px solid $cor_link;
+}
+
+#footer h4, #footer ul, #footer p {
+    margin: 24px;
+    line-height: 24px;
+}
+
+#footer li {
+    float: left;
+    margin: 0 12px 0 0;
+    padding: 0 12px 0 0;
+    border-right: 1px dotted $cor_link;
+}
+
+#footer li.twitter {
+    border: none;
+    font-weight: 900;
+}
+
+#footer li.twitter a {
+    color: yellow;
+}
