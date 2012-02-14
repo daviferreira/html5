@@ -1,6 +1,29 @@
 $cor_link: rgba(#4ca5fe, 1);
 $secao: blog;
 
+@media screen {
+  @media (max-width:640px) {
+     article {
+       p {
+          font-size: 18px;
+       }
+       img {
+          -webkit-transform: scale(0.8);
+          -moz-transform: scale(0.8);
+          transform: scale(0.8);   
+       }     
+     }
+  }  
+}
+
+@import "compass/css3";
+h1, h2{
+    @include text-shadow($cor_link 1px 1px 0);
+}
+
+@import "icons/*.png";
+@include all-icons-sprites;
+
 body {
     font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
     font-size: 14px;

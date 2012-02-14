@@ -1,92 +1,144 @@
-/* line 4, ../sass/acme.scss */
+@media screen and (max-width:640px) {
+  /* line 7, ../sass/acme.scss */
+  article p {
+    font-size: 18px;
+  }
+  /* line 10, ../sass/acme.scss */
+  article img {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+/* line 20, ../sass/acme.scss */
+h1, h2 {
+  text-shadow: #4ca5fe 1px 1px 0;
+}
+
+/* line 57, icons */
+.icons-sprite, .icons-dribbble, .icons-facebook, .icons-forrst, .icons-rss, .icons-skype, .icons-twitter {
+  background: url('/images/icons-sefc3afd160.png') no-repeat;
+}
+
+/* line 60, ../../../../../Users/davi.ferreira/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dribbble {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../../Users/davi.ferreira/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -20px;
+}
+
+/* line 60, ../../../../../Users/davi.ferreira/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-forrst {
+  background-position: 0 -30px;
+}
+
+/* line 60, ../../../../../Users/davi.ferreira/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rss {
+  background-position: 0 -50px;
+}
+
+/* line 60, ../../../../../Users/davi.ferreira/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-skype {
+  background-position: 0 -70px;
+}
+
+/* line 60, ../../../../../Users/davi.ferreira/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -90px;
+}
+
+/* line 27, ../sass/acme.scss */
 body {
   font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 14px;
   background-color: #fff;
 }
 
-/* line 16, ../sass/acme.scss */
+/* line 39, ../sass/acme.scss */
 .sidebar-1 {
   font-size: 0.5px;
 }
 
-/* line 16, ../sass/acme.scss */
+/* line 39, ../sass/acme.scss */
 .sidebar-2 {
   font-size: 1px;
 }
 
-/* line 16, ../sass/acme.scss */
+/* line 39, ../sass/acme.scss */
 .sidebar-3 {
   font-size: 1.5px;
 }
 
-/* line 20, ../sass/acme.scss */
+/* line 43, ../sass/acme.scss */
 p {
   line-height: 22px;
 }
 
-/* line 24, ../sass/acme.scss */
+/* line 47, ../sass/acme.scss */
 a {
   color: #4ca5fe;
   text-decoration: none;
 }
-/* line 27, ../sass/acme.scss */
+/* line 50, ../sass/acme.scss */
 a:hover {
   text-decoration: underline;
   color: #26527f;
 }
 
-/* line 33, ../sass/acme.scss */
+/* line 56, ../sass/acme.scss */
 h1 {
   font-size: 46px;
   line-height: 52px;
 }
 
-/* line 38, ../sass/acme.scss */
+/* line 61, ../sass/acme.scss */
 h1 a {
   color: #333;
 }
 
-/* line 42, ../sass/acme.scss */
+/* line 65, ../sass/acme.scss */
 h2 {
   line-height: 16px;
 }
 
-/* line 46, ../sass/acme.scss */
+/* line 69, ../sass/acme.scss */
 h2 a {
   color: #666;
 }
 
-/* line 50, ../sass/acme.scss */
+/* line 73, ../sass/acme.scss */
 h1 a:hover, h2 a:hover {
   color: #4ca5fe;
   text-decoration: none;
 }
 
-/* line 55, ../sass/acme.scss */
+/* line 78, ../sass/acme.scss */
 #container {
   margin: 0 auto;
   width: 960px;
   background-color: #fff;
 }
 
-/* line 61, ../sass/acme.scss */
+/* line 84, ../sass/acme.scss */
 #masthead {
   padding: 24px 0;
   border-top: 6px solid #4ca5fe;
 }
 
-/* line 66, ../sass/acme.scss */
+/* line 89, ../sass/acme.scss */
 #masthead h1, #masthead h2 {
   margin: 0 0 0 24px;
 }
 
-/* line 70, ../sass/acme.scss */
+/* line 93, ../sass/acme.scss */
 #search form {
   margin: 24px 0 0;
 }
 
-/* line 74, ../sass/acme.scss */
+/* line 97, ../sass/acme.scss */
 #fld-search {
   color: #4ca5fe;
   font-weight: 900;
@@ -95,12 +147,12 @@ h1 a:hover, h2 a:hover {
   width: 230px;
 }
 
-/* line 82, ../sass/acme.scss */
+/* line 105, ../sass/acme.scss */
 #fld-search.inactive {
   color: #ccc;
 }
 
-/* line 86, ../sass/acme.scss */
+/* line 109, ../sass/acme.scss */
 #btn-search {
   background-color: #4ca5fe;
   color: #fff;
@@ -109,12 +161,12 @@ h1 a:hover, h2 a:hover {
   cursor: pointer;
 }
 
-/* line 94, ../sass/acme.scss */
+/* line 117, ../sass/acme.scss */
 #menu {
   border-top: 1px dotted #ccc;
   border-bottom: 1px dotted #ccc;
 }
-/* line 97, ../sass/acme.scss */
+/* line 120, ../sass/acme.scss */
 #menu li {
   float: left;
   width: 80px;
@@ -123,12 +175,12 @@ h1 a:hover, h2 a:hover {
   padding: 10px;
 }
 
-/* line 106, ../sass/acme.scss */
+/* line 129, ../sass/acme.scss */
 #post h2, #post h3, #post p {
   padding: 24px;
 }
 
-/* line 110, ../sass/acme.scss */
+/* line 133, ../sass/acme.scss */
 #post h2 {
   font-family: Georgia, serif;
   font-size: 38px;
@@ -136,13 +188,13 @@ h1 a:hover, h2 a:hover {
   border-bottom: 1px dotted #4ca5fe;
 }
 
-/* line 117, ../sass/acme.scss */
+/* line 140, ../sass/acme.scss */
 #post h3 {
   font-size: 26px;
   line-height: 32px;
 }
 
-/* line 122, ../sass/acme.scss */
+/* line 145, ../sass/acme.scss */
 #post .photo {
   background-color: #ccc;
   width: 513px;
@@ -150,7 +202,7 @@ h1 a:hover, h2 a:hover {
   font-style: oblique;
 }
 
-/* line 129, ../sass/acme.scss */
+/* line 152, ../sass/acme.scss */
 #sidebar .box {
   margin: 24px 0;
   background-color: #f7f7f7;
@@ -158,43 +210,43 @@ h1 a:hover, h2 a:hover {
   border: 1px solid #666;
 }
 
-/* line 136, ../sass/acme.scss */
+/* line 159, ../sass/acme.scss */
 #sidebar .box h4 {
   color: #666;
   border-bottom: 1px dotted #666;
   font-size: 20px;
 }
 
-/* line 142, ../sass/acme.scss */
+/* line 165, ../sass/acme.scss */
 #sidebar .box ul {
   margin: 12px 0 0;
 }
 
-/* line 146, ../sass/acme.scss */
+/* line 169, ../sass/acme.scss */
 #sidebar .box li {
   padding: 12px 0;
   border-bottom: 1px dotted #ccc;
 }
 
-/* line 151, ../sass/acme.scss */
+/* line 174, ../sass/acme.scss */
 #sidebar .box a {
   color: #666;
 }
 
-/* line 155, ../sass/acme.scss */
+/* line 178, ../sass/acme.scss */
 #footer {
   background-color: #333;
   color: #fff;
   border-bottom: 6px solid #4ca5fe;
 }
 
-/* line 161, ../sass/acme.scss */
+/* line 184, ../sass/acme.scss */
 #footer h4, #footer ul, #footer p {
   margin: 24px;
   line-height: 24px;
 }
 
-/* line 166, ../sass/acme.scss */
+/* line 189, ../sass/acme.scss */
 #footer li {
   float: left;
   margin: 0 12px 0 0;
@@ -202,13 +254,13 @@ h1 a:hover, h2 a:hover {
   border-right: 1px dotted #4ca5fe;
 }
 
-/* line 173, ../sass/acme.scss */
+/* line 196, ../sass/acme.scss */
 #footer li.twitter {
   border: none;
   font-weight: 900;
 }
 
-/* line 178, ../sass/acme.scss */
+/* line 201, ../sass/acme.scss */
 #footer li.twitter a {
   color: yellow;
 }
